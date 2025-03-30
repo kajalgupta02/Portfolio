@@ -24,30 +24,57 @@ section{
   background-attachment: fixed;
 }
 ////
-  nav ul li a:hover{
-   color: rgb(125, 220, 215);
-   font-size: 1.04rem;
-  }
+ .main .content{
+  max-width: 800px;
+}
 
-  main hr{
-    border:0;
-    background: rgb(42, 155, 144);
-    height: 1.2px;
-    margin: 40px 84px;
+.main .content h2{
+  color: #fff;
+  font-size: 2em;
+  font-weight: 500;
+}
 
+.main .content h2 span{
+  font-size: 2.8em;
+  font-weight: 600;
+}
+
+.animated-text{
+  position: relative;
+  height: 70px;
+  overflow: hidden;
+}
+
+.animated-text h3{
+  color: #4e9eff;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 1px;
+}
+
+.animated-text h3:nth-child(1){
+  animation: text-move 10s infinite;
+}
+
+@keyframes text-move{
+  0%{
+    margin-top: 0;
   }
-  .left{
-    font-size: 1.5rem;
+  25%{
+    margin-top: -70px;
   }
-  .firstsection{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 80px 0;
+  50%{
+    margin-top: -140px;
   }
-  .firstsection > div{
-    width: 30%;
+  75%{
+    margin-top: -70px;
   }
+  100%{
+    margin-top: 0;
+  }
+}
+\\\\
 
   .leftsection{
    font-size: 3rem;
